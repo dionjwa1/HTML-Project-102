@@ -1,0 +1,20 @@
+p {
+    color:red;
+}
+
+section {
+    border: 5px solid red;
+}
+
+ul {
+    outline: 1px black solid;
+}
+
+li {
+    outline: 1px black solid;
+}
+
+h1 {
+    color: green;
+}
+
