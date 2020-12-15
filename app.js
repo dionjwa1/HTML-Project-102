@@ -32,8 +32,13 @@ if (hourNow > 18) {
         greeting = 'Good morning';}
     else {
         greeting = 'Welcome';
- }
-document.write(greeting);
+ } document.write(greeting);
 
+var customerName = prompt("Please enter your name", "");
+var greeting = customerName
+var display 
+if (customerName!= null) {
+    document.write("welcome" + customerName)
+}
 
-Element.style.color = green;
+Element.style.color = green;0.
