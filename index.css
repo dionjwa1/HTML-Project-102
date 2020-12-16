@@ -3,27 +3,31 @@ p {
 }
 
 section {
-    border: 5px solid red;
+    border: 5px solid gray;
     background-color:lightblue;
     
 }
 
 ul {
-    outline: 1px black solid;
+    outline: 5px black solid;
 }
 
 li {
-    outline: 1px black solid;
+    padding: 10px;
+    outline: 3px black solid;
 }
 
 h1 {
+    text-align: center;
     color: green;
 }
+h2{
+    text-align: center;
 
-.center {
-    position: absolute;
-    left: 50%;
-    width: 300px;
-    padding: 30px;
-    padding-top: 0px;
+script {
+        text-align: center;
+}
+
+section {
+    padding: 100px;
 }

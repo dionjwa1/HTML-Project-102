@@ -10,12 +10,11 @@ var response = prompt(promptQuestion);
 console.log (response);
 var reflected;
  var alertMessage;
-
+var color;
  if (response === "1") {
      reflected = "That's right!";
  } else  {
     reflected = "Move to Seattle!"
-
 }
 alert (reflected)
 
@@ -24,21 +23,34 @@ var hourNow = today.getHours();
 var greeting;
 
 if (hourNow > 18) {
-    greeting = 'Good Evening';
+    greeting = 'Good Evening' +" " ;
 }
     else if (hourNow >12) {
-        greeting = 'Good afternoon';}
+        greeting = 'Good afternoon' +" ";}
     else if (hourNow > 0) {
-        greeting = 'Good morning';}
+        greeting = 'Good morning' +" ";}
     else {
         greeting = 'Welcome';
  } document.write(greeting);
 
 var customerName = prompt("Please enter your name", "");
-var greeting = customerName
-var display 
+var greeting = customerName;
+var display;
 if (customerName!= null) {
-    document.write("welcome" + customerName)
+    document.write("Welcome" + " "+ customerName);
 }
 
-Element.style.color = green;0.
+function setColorBasedOnUserInput(response){
+    console.log ('response', response);
+    if (response === "1"){
+        color = "lightblue";
+    } else if (response === "2"){
+        console.log ('I selected 2')
+        color = "lightgreen";
+    }
+    
+function getWeather(Temp){
+    var url - 'https://openweathermap.org/city/5809844';
+}
+}
+setColorBasedOnUserInput(response);
