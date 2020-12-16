@@ -2,6 +2,18 @@ console.log ("Hi")
 
 //Start Functions
 
+function getUserPrompt(message) {
+    var userInput = prompt(message);
+    return userInput;
+}
+
+function entryValidation(){
+    var storedPassword = "123";
+    do {
+    var passwd = getUserPrompt("Enter password");
+    }while(passwd !== storedPassword)
+}
+
 
 
 function initialMessage(){
@@ -49,7 +61,7 @@ function salutation(){
         greeting = 'Welcome';
     } 
 
-    document.getElementById("firstEntry").innerHTML = greeting, customerName;
+    document.getElementById("firstEntry").innerHTML = greeting;
 }
 
 function visitorName(){
@@ -71,11 +83,16 @@ function identry(){
 }
 
 // Start Calls
+
+entryValidation();
+
 initialMessage();
 
 salutation();
 
 visitorName();
+
+
 
 
 
