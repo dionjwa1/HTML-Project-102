@@ -36,7 +36,7 @@ function initialMessage(){
 function setColorBasedOnInitialMessage(response){
     var color;
     if (response === "1"){
-        color = "green";
+        color = "lightyellow";
     } else if (response === "2"){
         color = "lightblue";
     } else {
@@ -74,13 +74,28 @@ function visitorName(){
 }
 }
 
+function addSunShineToDocument(str){
+    document.write("<section> \
+                        <h2>" + str + "</h2> \
+                        <img src=\"images/" + str + ".png\"> \
+                        <p>" + str +  ".</p> \
+                    </section>");
+}
 
+    
+var addSunShine = prompt("How many suns do you want?");
+for (var i= 0; i < addSunShine; i++){
+    console.log(i);
+    addSunShineToDocument("SmileySun");
+}
 
 function identry(){
 
     document.getElementById("firstEntry").innerHTML = visitorName;
 
 }
+
+
 
 // Start Calls
 
